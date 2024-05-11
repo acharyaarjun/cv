@@ -49,9 +49,32 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .cv .download-icon {
     display: none;
+  }
+
+  .cv {
+    display: none;
+  }
+
+  body {
+    text-align: center;
+  }
+
+  body::before {
+    content: "Please open this page in a desktop browser 🙏";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 
